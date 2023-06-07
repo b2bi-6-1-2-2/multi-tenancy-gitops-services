@@ -151,7 +151,7 @@ ingress:
   port:
 
 dataSetup:
-  enabled: true
+  enabled: false
   upgrade: false
   image:
     repository: "cp.icr.io/cp/ibm-b2bi/b2bi-dbsetup"
@@ -199,7 +199,7 @@ setupCfg:
   #upgrade: false
   basePort: 50000
   #License - specify values as true/false
-  licenseAcceptEnableSfg: false
+  licenseAcceptEnableSfg: true
   licenseAcceptEnableEbics: false
   licenseAcceptEnableFinancialServices: false
   licenseAcceptEnableFileOperation: false
@@ -217,7 +217,7 @@ setupCfg:
   dbPort: 50000
   dbData: B2BIDB
   dbDrivers: db2jcc4.jar
-  dbCreateSchema: true
+  dbCreateSchema: false
   oracleUseServiceName: false
   # Values can be either true or false 
   usessl: false
@@ -448,7 +448,7 @@ asi:
     
   ingress:
     internal:
-      host: asi-itzroks-6620022xah-idcnf4-6ccd7f378ae819553d37d5f2ee142bd6-0000.us-east.containers.appdomain.cloud
+      host: asi.itzroks-6620022xah-idcnf4-6ccd7f378ae819553d37d5f2ee142bd6-0000.us-east.containers.appdomain.cloud
       tls:
         enabled: true
         secretName: ""
@@ -723,7 +723,7 @@ ac:
       
   ingress:
     internal:
-      host: ac-itzroks-6620022xah-idcnf4-6ccd7f378ae819553d37d5f2ee142bd6-0000.us-east.containers.appdomain.cloud
+      host: ac.itzroks-6620022xah-idcnf4-6ccd7f378ae819553d37d5f2ee142bd6-0000.us-east.containers.appdomain.cloud
       tls:
         enabled: true
         secretName: ""
@@ -969,7 +969,7 @@ api:
 
   ingress:
     internal:
-      host: api-itzroks-6620022xah-idcnf4-6ccd7f378ae819553d37d5f2ee142bd6-0000.us-east.containers.appdomain.cloud
+      host: api.itzroks-6620022xah-idcnf4-6ccd7f378ae819553d37d5f2ee142bd6-0000.us-east.containers.appdomain.cloud
       tls:
         enabled: true
         secretName: ""
